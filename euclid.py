@@ -3,9 +3,8 @@
 def gcd(one, two):                  
     if two == 0:                         
         return one
-     #первый элемент - второй а второй остаток от обоих
-    else:                                   
-        return x                     
+    else:                                 
+        return gcd(two, one%two)                     
 
 #запуск всех функций
 def main():  
